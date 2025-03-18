@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f5f5f5;
@@ -64,6 +65,7 @@ body {
     width: 220px;
     height: 220px;
     object-fit: cover;
+    object-position: center 15%;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
@@ -109,6 +111,21 @@ body {
     text-decoration: underline;
   }
   
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
   @media (max-width: 768px) {
     .about-container {
       flex-direction: column;
@@ -124,16 +141,4 @@ body {
       display: block;
       margin: 10px 0;
     }
-  }
-  footer {
-    background-color: #222;
-    color: #ddd;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 0.9rem;
-  }
-  
-  footer p {
-    margin: 0;
   }
