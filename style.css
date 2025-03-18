@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  header {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  nav a {
+    margin: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #00bfa6;
+  }
+  
+  .section {
+    padding: 60px 0;
+    background-color: white;
+    border-radius: 8px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+  }
+  
+  a.button {
+    background-color: #00bfa6;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.button:hover {
+    background-color: #009e8a;
+  }
+  
+  a {
+    color: #00bfa6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
