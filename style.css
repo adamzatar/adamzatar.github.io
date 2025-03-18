@@ -1,124 +1,147 @@
-/* Reset and Base */
-* {
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #d8c3ff, #f5f5f5);
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
   }
   
   header {
-    text-align: center;
-    padding: 50px 0;
-    background: linear-gradient(to right, #007bff, #00c6ff);
+    background-color: #222;
     color: white;
-    border-radius: 8px;
-    animation: fadeIn 1.5s ease forwards;
+    padding: 30px 0;
   }
   
   header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  header p {
-    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
   }
   
   nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 30px 0;
+    text-align: center;
+    margin-top: 15px;
   }
   
   nav a {
+    margin: 0 20px;
+    color: #ffffff;
     text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    position: relative;
+    font-weight: 600;
     transition: color 0.3s ease;
   }
   
-  nav a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #007bff;
-    transition: width 0.3s;
-  }
-  
   nav a:hover {
-    color: #0056b3;
+    color: #00bfa6;
   }
   
-  nav a:hover::after {
-    width: 100%;
-  }
-  
-  section {
-    background: #ffffff;
-    padding: 30px;
-    margin-bottom: 20px;
+  .section {
+    padding: 60px 0;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: fadeIn 1.2s ease forwards;
   }
   
-  section:hover {
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  h2 {
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #f0f0f0;
     transform: translateY(-5px);
   }
   
-  section h2 {
-    margin-bottom: 15px;
-    color: #343a40;
+  a.button {
+    background-color: #00bfa6;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
   }
   
-  ul li {
-    margin-bottom: 10px;
+  a.button:hover {
+    background-color: #009e8a;
+  }
+  
+  a {
+    color: #00bfa6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
   
   footer {
+    background-color: #222;
+    color: #ddd;
     text-align: center;
-    padding: 20px;
-    background: #f1f1f1;
-    border-radius: 8px;
+    padding: 20px 0;
     margin-top: 40px;
+    font-size: 0.9rem;
   }
   
-  /* Typewriter Effect */
-  .typewriter {
-    border-right: .15em solid #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+  footer p {
+    margin: 0;
   }
   
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
   
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
-  }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+    }
   
-  /* Fade In Animation */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* Icons */
-  i {
-    color: #007bff;
-    margin-right: 8px;
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
   }
