@@ -4,104 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adam Zaatar</title>
+  <title>Adam Zaatar | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <h1>Adam Zaatar</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#activities">Bowdoin Activities</a>
-        <a href="#languages">Languages</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <h1 class="typewriter">Adam Zaatar</h1>
+    <p>Computer Science & Economics Student | Aspiring Software Engineer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section id="about" class="section">
-    <div class="container about-container">
-      <img src="images/profile.jpg" alt="Adam Zaatar" class="profile-pic">
-      <div>
-        <h2>About Me</h2>
-        <p>I'm a Computer Science and Economics double major at Bowdoin College with a minor in German. My work spans software engineering, data analysis, and academic research — from building full-stack apps to renewable energy analysis. Passionate about the intersection of technology and economics, I enjoy developing solutions that are both technically sound and socially impactful.</p>
-      </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a Bowdoin College student double-majoring in Computer Science and Economics. Passionate about the intersection of finance, technology, and software development.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Investify</h3>
+      <p>A virtual investment app simulating S&P 500 trading with real-time data and leaderboards.</p>
+    </div>
+    <div class="card">
+      <h3>Personal Website</h3>
+      <p>Designed and developed this portfolio website with professional UI/UX, animations, and responsive design.</p>
+    </div>
+    <div class="card">
+      <h3>Twitter Clone</h3>
+      <p>Replicated core Twitter functionalities to deepen understanding of social media platforms.</p>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="card">
-        <strong>Investify</strong> - <a href="https://github.com/adamzatar/Investify" target="_blank">View Project</a><br>
-        A virtual investment app integrating real-time S&P 500 data and leaderboard features.
-      </div>
-      <div class="card">
-        <strong>Twitter Clone</strong> - <a href="https://github.com/adamzatar/TwitterSwiftUI" target="_blank">View Project</a><br>
-        Full-featured Twitter clone with real-time feeds, profile management, and Firebase backend.
-      </div>
-      <div class="card">
-        <strong>Instagram Clone</strong> - <a href="https://github.com/adamzatar/InstagramClone" target="_blank">View Project</a><br>
-        Photo sharing app replicating Instagram’s core features with integrated chat functionality.
-      </div>
-      <div class="card">
-        <strong>Calculator Project</strong> - <a href="https://github.com/adamzatar/IntCalculator.java/blob/main/IntCalculator.java" target="_blank">View Code</a><br>
-        Stack-based integer calculator converting infix to postfix and solving complex expressions.
-      </div>
+  <section id="experience">
+    <h2>Activities & Research</h2>
+
+    <div class="card">
+      <h3>Finance Research & Course Development</h3>
+      <p>Collaborating with faculty to build a finance course for Bowdoin and local high school students, covering practical topics like taxes, mortgages, and financial literacy for post-college life.</p>
+    </div>
+
+    <div class="card">
+      <h3>Martial Arts Club</h3>
+      <p>Founder & President of Bowdoin's first Martial Arts Club, collaborating with First Class MMA gym for training and instruction.</p>
+    </div>
+
+    <div class="card">
+      <h3>The Bowdoin Orient</h3>
+      <p>Web Staff & Data Desk member—building data-driven articles, visualizations, and managing the website backend.</p>
     </div>
   </section>
 
-  <section id="activities" class="section">
-    <div class="container">
-      <h2>Bowdoin Activities</h2>
-      <div class="card">Founder & President - Bowdoin Martial Arts Club</div>
-      <div class="card">Web Staff - The Bowdoin Orient (News Website)</div>
-      <div class="card">Summer Research - Finance Project with Professor Nelson, exploring the intersection of finance and technology</div>
-    </div>
-  </section>
-
-  <section id="languages" class="section">
-    <div class="container">
-      <h2>Languages</h2>
-      <div class="card">English - Fluent</div>
-      <div class="card">Arabic - Native</div>
-      <div class="card">German - Intermediate</div>
-    </div>
-  </section>
-
-  <section id="resume" class="section">
-    <div class="container">
-      <h2>Resume</h2>
-      <p><a href="resume/AdamZaatar_CV_2025.pdf" target="_blank" class="button">Download My Resume</a></p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:azaatar@bowdoin.edu"> azaatar@bowdoin.edu</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/adam-zaatar-09b106304/" target="_blank">LinkedIn</a></p>
-      <p><i class="fab fa-github"></i> <a href="https://github.com/adamzatar" target="_blank">GitHub</a></p>
-      <p><i class="fas fa-phone"></i> <a href="tel:2074816843">207-481-6843</a></p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:azaatar@bowdoin.edu">azaatar@bowdoin.edu</a></p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Adam Zaatar. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Adam Zaatar</p>
   </footer>
-
 </body>
+
 </html>
